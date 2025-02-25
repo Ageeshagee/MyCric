@@ -22,7 +22,6 @@ const Dashboard = () => {
             <Nav.Link href="/home" style={{marginLeft:"30px",color:'black'}}>Home</Nav.Link>
             <Nav.Link href="/scorecard" style={{marginLeft:"30px",color:'black'}}>New Match</Nav.Link>
             <Nav.Link href="/matches" style={{marginLeft:"30px",color:'black'}}>Match History</Nav.Link>
-            <Nav.Link href="/register" style={{marginLeft:"30px",color:'black'}}>Add User</Nav.Link>
             <Button style={{marginLeft:'550px'}} variant="primary" href='/'>Log Out</Button>
           </Nav>
         </Container>
