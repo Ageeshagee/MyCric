@@ -9,7 +9,12 @@ const cros =require('cors');
 
 connectDb()
 const app=express()
-app.use(cros());
+
+app.use(cros({
+  origin: process.env.CLIENT_URL || "http://localhost:5173",
+  methods: "GET,POST,PUT,DELETE",
+  allowedHeaders: "Content-Type,Authorization",
+}));
 app.use(express.json());
 app.get('/',(req,res)=>{
     res.send("Welcome")
